@@ -1,1 +1,28 @@
-# BABY_STEPS_HTML5-
+# BABY_STEPS_HTML5
+
+## ⚙️ Instalación y Configuración
+
+Sigue estos pasos para ejecutar el proyecto localmente:
+
+1.  **Clona el repositorio:**
+    ```bash
+    git clone https://github.com/VitaPoperechna/BABY_STEPS_HTML5.git
+    cd [nombre-del-repositorio]
+
+2.  **Construye la imagen Docker::**
+    ```bash
+    docker build -t baby-steps .
+   
+    ```
+
+3.  **Ejecuta el contenedor:**
+    ```bash
+    docker run -d -p 8080:80 baby-steps
+    ```
+
+4.  **Abre el proyecto en el navegador:**
+   Accede a http://localhost:8080
+
+   Este proyecto usa nginx:alpined como servidor web ligero para servir el archivo estático (HTML).
+
+   Asegúrate de que el puerto 8080 no esté en uso por otra aplicación. 
